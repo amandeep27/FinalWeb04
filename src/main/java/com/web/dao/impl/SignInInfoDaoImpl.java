@@ -18,8 +18,8 @@ public class SignInInfoDaoImpl implements SignInInfoDao {
 
 	private static DBConnection dbConnection;
 	private static final Logger LOGGER = Logger.getLogger(SignInInfoDaoImpl.class);
-	private static final String SELECT_QUERY = "select * from user_login.ul_info where ul_id = ?;";
-	private static final String IF_VALID_USER = "select exists( select * from user_login.ul_info where ul_id = ?) as 'userExists';";
+	private static final String SELECT_QUERY = "select * from ul_info where ul_id = ?;";
+	private static final String IF_VALID_USER = "select exists( select * from ul_info where ul_id = ?) as 'userExists';";
 	private static final String GET_USER_LANG = "select * from ul_lang where l_id = ?;";
 	private static final String USER_ID = "ul_id";
 	private static final String USER_NAME = "ul_name";
